@@ -1,0 +1,65 @@
+#**** COLORS: ****
+
+source ~/.bashrc.d/catppuccin_mocha
+
+#**** INITIALIZATIONS: ****
+
+# start ssh agent
+if [ -z "$SSH_AGENT_PID" ]; then
+    eval "$(ssh-agent -s)" > /dev/null 2>&1
+
+fi
+
+# add ssh key
+if ! ssh-add -l | grep -q "id_rsa"; then
+    ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
+fi
+
+#**** CUSTOM FUNCTIONS: ****
+
+git_info() {
+    local branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+    if [[ -n $branch ]]; then
+        echo -e "${cat_rosewater_fg}[${cat_teal_fg}$branch${cat_rosewater_fg}]"
+        
+        #if git diff --quiet 2>/dev/null && git diff --cached --quiet 2>/dev/null; then
+        #if [[ -z $(git status --porcelain 2>/dev/null) ]]; then
+	#    echo -e "${mocha_rosewater}[${mocha_teal}$branch${mocha_rosewater}]"
+        #else
+        #    echo -e "${mocha_rosewater}[${mocha_peach}$branch${mocha_rosewater}]"
+        #fi
+    fi
+}
+
+#**** BASH PROMPT ****
+catppuccin_prompt() {
+    local branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+    local shape="\ue0b4"
+    local prompt="\[${cat_mauve_bg}\]"
+    prompt+="\[${cat_base_fg}\] \D{%H:%M:%S}"
+    prompt+="\[${cat_mauve_fg}${cat_blue_bg}${shape}\]"
+    prompt+="\[${cat_base_fg}\] \u"
+    prompt+="\[${cat_blue_fg}${cat_maroon_bg}${shape}\]"
+    prompt+="\[${cat_base_fg}\] \W"
+    if [[ -n $branch ]]; then
+        if [[ -n $(git status --porcelain) ]]; then
+            prompt+="\[${cat_maroon_fg}${cat_peach_bg}${shape}\]"
+            prompt+="\[${cat_base_fg}\] \ue725 $branch"
+            prompt+="\[${cat_peach_fg}${default_bg}${shape}\]"
+        else
+            prompt+="\[${cat_maroon_fg}${cat_teal_bg}${shape}\]"
+            prompt+="\[${cat_base_fg}\] \[\ue725\] $branch"
+            prompt+="\[${cat_teal_fg}${default_bg}${shape}\]"
+        fi
+    else
+        prompt+="\[${cat_maroon_fg}${default_bg}${shape}\]"
+    fi
+    prompt+="$reset "
+    echo -e "$prompt"
+}
+
+build_prompt() {
+    PS1=$(catppuccin_prompt)
+}
+
+PROMPT_COMMAND=build_prompt

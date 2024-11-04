@@ -1,0 +1,86 @@
+<JWM>
+<!-- Inspired by the antiX radiant theme for Fluxbox -->
+<!-- Adapted to JWM by John Andrews -->
+
+<WindowStyle>
+	<Font>Kristen ITC-9</Font>
+	<Width>4</Width>
+	<Height>20</Height>
+	<Active>
+		<Foreground>#190400</Foreground>
+		<Background>#ef7d10:orange</Background>
+		<Outline>#000000</Outline>
+	</Active>
+		<Foreground>#ef7d10</Foreground>
+		<Background>#190400</Background>
+		<Outline>#000000</Outline>
+</WindowStyle>
+
+<TaskListStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Active>
+		<Foreground>black</Foreground>
+		<Background>#ef7d10:yellow</Background>
+	</Active>
+	<Inactive>
+		<Foreground>gray60</Foreground>
+		<Background>#190400:black</Background>
+	</Inactive>
+</TaskListStyle>
+
+<TrayStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Background>#190400</Background> <!-- Matching menu background color -->
+	<Foreground>#ef7d10</Foreground> <!-- Matching menu hilite color -->
+</TrayStyle>
+
+<ClockStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Foreground>white</Foreground>
+	<Background>#190400</Background> <!-- Matching menu background color -->
+</ClockStyle>
+
+<PagerStyle>
+	<Outline>#000000</Outline>
+	<Foreground>gray</Foreground>
+	<Background>#190400</Background> <!-- Matching menu background color -->
+	<Active>
+		<Foreground>#ef7d10</Foreground>
+		<Background>#190400</Background> <!-- Matching menu background color -->
+	</Active>
+</PagerStyle>
+
+<MenuStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Foreground>white</Foreground>
+	<Background>#190400</Background> <!-- Matching menu background color -->
+	<Outline>#000000</Outline>
+	<Active>
+		<Foreground>black</Foreground>
+		<Background>#ef7d10:orange</Background>
+	</Active>
+	<Opacity>0.85</Opacity>
+</MenuStyle>
+
+<PopupStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Outline>#000000</Outline>
+	<Foreground>#ef7d10</Foreground>
+	<Background>#190400</Background> <!-- Matching menu background color -->
+</PopupStyle>
+
+<TaskBarStyle>
+    <Font>Ubuntu-10:style=Regular:antialias=true</Font>
+    <Height>24</Height>
+    <TaskButton>
+        <Foreground>#FFFFFF</Foreground> <!-- Text color of the button -->
+        <Background>#190400</Background> <!-- Background color of the button -->
+        <BackgroundDown>#190400</BackgroundDown> <!-- Background color when pressed -->
+        <Outline>#000000</Outline> <!-- Border color of the button -->
+        <OutlineDown>#000000</OutlineDown> <!-- Border color when pressed -->
+    </TaskButton>
+</TaskBarStyle>
+
+</JWM>
+
+

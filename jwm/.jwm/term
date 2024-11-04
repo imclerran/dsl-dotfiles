@@ -1,0 +1,31 @@
+<JWM>
+    <Menu label="Web Browsers">
+    <Program label="Links2" >x-terminal-emulator -e links2 /usr/share/dsl/docs/links2.html</Program>
+    <Program label="w3m" >x-terminal-emulator -e w3m-wrapper</Program>
+    </Menu>
+    <Menu label="Games">
+    <Program label="ViteTris Game" >urxvt -g 80x30 -e vitetris</Program>
+    <Program label="Space Invaders" >urxvt -g 80x26 -e ninvaders</Program>
+    <Program label="Sudoku" >urxvt -g 65x28 -e nudoku</Program>
+    <Program label="PacMan" >urxvt -g 45x33 -e pacman4console</Program>
+    <Program label="Piu Piu (a↔d,w↕s,p=piu)" >urxvt -g 145x40 -e piu-piu</Program>    
+    </Menu>
+    <Menu label="Applications">
+    <Program label="Ranger File Manager" >x-terminal-emulator -e ranger</Program>
+    <Program label="VisiData Spreadsheets" >x-terminal-emulator -e visidata</Program>
+    <Program label="FZF fuzzy finder" >x-terminal-emulator -e fzf</Program>
+    <Program label="Tmux Terminal Multiplexer" >x-terminal-emulator -e tmux-demo</Program>
+    <Program label="Mutt Email Client" >x-terminal-emulator -e mutt</Program>
+    <Program label="CalCurse Planner" >x-terminal-emulator -e calcurse</Program>
+    <Program label="CDW CD Burner" >urxvt -g 80x24 -e cdw</Program>
+    <Program label="WeeChat IRC Client" >x-terminal-emulator -e weechat</Program>
+    <Program label="SurfRaw Wrapper" >x-terminal-emulator -e sr-wrapper</Program>
+    <Program label="Alsamixer" >x-terminal-emulator -e alsamixer</Program>
+    <Program label="Cmus Music Player" >x-terminal-emulator -e cmus</Program>
+    <Program label="HTop" >x-terminal-emulator -e htop</Program>
+    <Program label="Weather" >x-terminal-emulator -e weather</Program>
+    <Program label="MPV Media Player Wrapper" >x-terminal-emulator -e mpv-wrapper</Program>
+    <Program label="Vim Text Editor" >x-terminal-emulator -e vim</Program>
+    <Program label="Nano Text Editor" >x-terminal-emulator -e nano</Program>
+    </Menu>
+</JWM>

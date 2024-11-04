@@ -1,0 +1,31 @@
+<JWM>
+    <Program label="Terminal">urxvt -tr -sh 20 -g 70x25 -fg white</Program>
+    <Program label="File Manager">desktop-defaults-run -fm</Program>
+    <Program label="Web Browser">/usr/lib/firefox-esr/firefox-esr</Program>
+    <Program label="Lite Web Browser">netsurf-gtk</Program>
+    <Program label="Editor">leafpad</Program>
+    <Separator/>
+    <Menu label="Term Apps">
+        <Include>$HOME/.jwm/term</Include>
+    </Menu>
+    <Menu label="Applications">
+        <Include>$HOME/.jwm/menu-applications</Include>
+    </Menu>
+    <Program label="Refresh Menu">desktop-menu --write-out-global && jwm -restart</Program>
+    <Separator/>
+    <Menu label="Desktop" icon="/usr/share/icons/papirus-antix/48x48/apps/user-desktop.png">
+        <Menu label="Other Desktops" icon="/usr/share/icons/papirus-antix/48x48/apps/user-desktop.png">
+            <Include>/usr/share/desktop-session/wm-menus/jwm-wm-menu</Include>
+        </Menu>
+    <Separator/>
+        <Program label="Conky on/off" icon="/usr/share/icons/papirus-antix/48x48/apps/conky-on-off.png">conkytoggle.sh</Program>
+    </Menu>
+    <Separator/>
+    <Program label="DSL File Restore" icon="/usr/share/pixmaps/live-usb-kernel-updater.png">x-terminal-emulator -e sudo /usr/local/bin/restore</Program>
+    <Separator/>
+    <Program label="App Killer" icon="/usr/share/icons/papirus-antix/48x48/apps/appkill.png">xkill</Program>
+    <Program label="Control Centre" icon="/usr/share/icons/papirus-antix/48x48/apps/control-center2.png">dslcc.sh</Program>
+    <Program label="Run" icon="/usr/share/icons/papirus-antix/48x48/apps/gnome-run.png">gexec</Program>
+    <Separator/>
+    <Include>$HOME/.jwm/themes-list</Include>
+</JWM>

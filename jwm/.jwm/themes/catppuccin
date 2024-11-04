@@ -1,0 +1,86 @@
+<JWM>
+<!-- A catppuccin mocha inspired theme -->
+<!-- Adapted to JWM by Ian McLerran -->
+
+<WindowStyle>
+	<Font>Kristen ITC-9</Font>
+	<Width>4</Width>
+	<Height>24</Height>
+	<Active>
+		<Foreground>#1e1e2e</Foreground>
+		<Background>#cba6f7:#cba6f7</Background>
+		<Outline>#1e1e2e</Outline>
+	</Active>
+		<Foreground>#cba6f7</Foreground>
+		<Background>#1e1e2e</Background>
+		<Outline>#92e2d5</Outline>
+</WindowStyle>
+
+<TaskListStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Active>
+		<Foreground>#1e1e2e</Foreground>
+		<Background>#f5c2e7:#cba6f7</Background>
+	</Active>
+	<Inactive>
+		<Foreground>gray60</Foreground>
+		<Background>#190400:</Background>
+	</Inactive>
+</TaskListStyle>
+
+<TrayStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Background>#1e1e2e:#181825</Background> <!-- Matching menu background color -->
+	<Foreground>#cba6f7</Foreground> <!-- Matching menu hilite color -->
+</TrayStyle>
+
+<ClockStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Foreground>#94e2d5</Foreground>
+	<Background>#1e1e2e:#181825</Background> <!-- Matching menu background color -->
+</ClockStyle>
+
+<PagerStyle>
+	<Outline>#11111b</Outline>
+	<Foreground>#94e2d5</Foreground>
+	<Background>#313244</Background> <!-- Matching menu background color -->
+	<Active>
+		<Foreground>#cba6f7</Foreground>
+		<Background>#585b70</Background> <!-- Matching menu background color -->
+	</Active>
+</PagerStyle>
+
+<MenuStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Foreground>#cba6f7</Foreground>
+	<Background>#1e1e2e</Background> <!-- Matching menu background color -->
+	<Outline>#11111b</Outline>
+	<Active>
+		<Foreground>#1e1e2e</Foreground>
+		<Background>#74c7ec:#94e2d5</Background>
+	</Active>
+	<Opacity>0.85</Opacity>
+</MenuStyle>
+
+<PopupStyle>
+	<Font>Ubuntu-10:style=Regular:antialias=true</Font>
+	<Outline>#000000</Outline>
+	<Foreground>#f5c2e7</Foreground>
+	<Background>#1e1e2e</Background> <!-- Matching menu background color -->
+</PopupStyle>
+
+<TaskBarStyle>
+    <Font>Ubuntu-10:style=Regular:antialias=true</Font>
+    <Height>24</Height>
+    <TaskButton>
+        <Foreground>#cba6f7</Foreground> <!-- Text color of the button -->
+        <Background>#1e1e2e</Background> <!-- Background color of the button -->
+        <BackgroundDown>#181825</BackgroundDown> <!-- Background color when pressed -->
+        <Outline>#11111b</Outline> <!-- Border color of the button -->
+        <OutlineDown>#11111b</OutlineDown> <!-- Border color when pressed -->
+    </TaskButton>
+</TaskBarStyle>
+
+</JWM>
+
+

@@ -1,0 +1,70 @@
+<JWM>
+<Menu label="Accessories" icon="gtk-missing-image" >
+<Program label="Archive Manager" icon="gtk-missing-image">file-roller </Program>
+<Program label="Calcurse" icon="gtk-missing-image">desktop-defaults-run -t calcurse</Program>
+<Program label="Leafpad" icon="/usr/share/pixmaps/leafpad.png">leafpad </Program>
+<Program label="Other Desktops" icon="gtk-missing-image">/usr/local/lib/desktop-session/desktop-session-menu-window ignore-settings</Program>
+<Program label="Rxvt Color Unicode Terminal" icon="/usr/share/pixmaps/gksu-root-terminal.png">urxvt</Program>
+<Program label="Searchmonkey" icon="gtk-missing-image">searchmonkey</Program>
+<Program label="zzzFM File Search" icon="/usr/share/pixmaps/zzzfm-find.png">zzzfm --find-files </Program>
+</Menu>
+<Menu label="Distro Tools" icon="gtk-missing-image" >
+<Program label="Chroot Rescue Scan" icon="gtk-missing-image">x-terminal-emulator -e sudo chroot-rescue-scan --pause</Program>
+<Program label="DSL Bootable USB Maker" icon="/usr/share/pixmaps/live-usb-kernel-updater.png">x-terminal-emulator -e sudo /usr/local/bin/dsl-usb-maker.sh</Program>
+<Program label="Live-USB Kernel Updater" icon="/usr/share/pixmaps/live-usb-kernel-updater.png">x-terminal-emulator -e sudo /usr/local/bin/live-kernel-updater --pause</Program>
+<Program label="Login Manager" icon="/usr/share/icons/antix-papirus/computer.png">su-to-root -X -c /usr/local/bin/login-config-antix</Program>
+<Program label="WiFi Switch" icon="/usr/share/icons/antix-papirus/connman.png">/usr/local/bin/antix-wifi-switch</Program>
+</Menu>
+<Menu label="Games" icon="gtk-missing-image" >
+<Program label="Gav (z↔v,alt↑)" icon="">gav </Program>
+<Program label="Tenmado" icon="">tenmado </Program>
+<Program label="Tuxpuck" icon="">tuxpuck </Program>
+</Menu>
+<Menu label="Graphics" icon="gtk-missing-image" >
+<Program label="mtPaint Graphic Editor" icon="/usr/share/pixmaps/mtpaint.png">mtpaint </Program>
+</Menu>
+<Menu label="Internet" icon="/usr/share/icons/antix-papirus/preferences-system-network.png" >
+<Program label="Badwolf" icon="/usr/share/icons/hicolor/48x48/apps/badwolf.png">badwolf </Program>
+<Program label="Ceni" icon="/usr/share/icons/antix-papirus/ceni.png">desktop-defaults-run -t su-to-root -c /usr/sbin/Ceni</Program>
+<Program label="Connman UI Setup" icon="/usr/share/icons/antix-papirus/preferences-system-network.png">cmst</Program>
+<Program label="Dillo" icon="/usr/share/pixmaps/dillo.png">dillo </Program>
+<Program label="gFTP" icon="/usr/share/icons/hicolor/48x48/apps/gftp.png">gftp-gtk</Program>
+<Program label="Links 2" icon="/usr/share/pixmaps/links2.xpm">xlinks2 /usr/share/dsl/docs/links2.html</Program>
+<Program label="Network Assistant" icon="gtk-missing-image">/usr/sbin/network-assistant</Program>
+<Program label="Sylpheed Email Client" icon="/usr/share/pixmaps/sylpheed.xpm">sylpheed</Program>
+<Program label="UFW Firewall" icon="gtk-missing-image">antix_firewall_toggle</Program>
+</Menu>
+<Menu label="Multimedia" icon="gtk-missing-image" >
+<Program label="Alsamixer" icon="/usr/share/pixmaps/alsamixer-equalizer.png">x-terminal-emulator -e alsamixer</Program>
+<Program label="Alsamixer Equalizer" icon="/usr/share/pixmaps/alsamixer-equalizer.png">x-terminal-emulator -e alsamixer -D equalizer</Program>
+<Program label="MPV Media Player Wrapper" icon="/usr/share/icons/hicolor/symbolic/apps/mpv-symbolic.svg">x-terminal-emulator -e  mpv-wrapper</Program>
+<Program label="Sound Card Chooser" icon="/usr/share/icons/antix-papirus/soundcard.png">alsa-set-default-card</Program>
+<Program label="XMMS" icon="gtk-missing-image">xmms</Program>
+</Menu>
+<Menu label="Office" icon="gtk-missing-image" >
+<Program label="AbiWord" icon="/usr/share/icons/hicolor/48x48/apps/abiword.png">abiword </Program>
+<Program label="Gnumeric" icon="/usr/share/icons/hicolor/48x48/apps/gnumeric.png">gnumeric </Program>
+<Program label="Zathura PDF Viewer" icon="/usr/share/icons/hicolor/48x48/apps/zathura.png">zathura </Program>
+</Menu>
+<Menu label="Preferences" icon="/usr/share/icons/antix-papirus/preferences-desktop.png" >
+<Program label="ADSL/PPPOE Configuration" icon="/usr/share/pixmaps/pppoeconf.xpm">x-terminal-emulator -e /usr/sbin/pppoeconf</Program>
+<Program label="ARandR" icon="/usr/share/icons/antix-papirus/video-display.png">arandr</Program>
+<Program label="Configure Automount" icon="/usr/share/icons/antix-papirus/mountbox.png">automount-config</Program>
+<Program label="Connman UI Setup" icon="/usr/share/icons/antix-papirus/preferences-system-network.png">cmst</Program>
+<Program label="Customize Look and Feel" icon="/usr/share/icons/antix-papirus/preferences-desktop-theme.png">lxappearance</Program>
+<Program label="Mouse Configuration" icon="/usr/share/icons/antix-papirus/input-mouse.png">ds-mouse</Program>
+<Program label="runit service manager" icon="gtk-missing-image">su-to-root -X -c runit-service-manager.sh</Program>
+<Program label="System Keyboard" icon="/usr/share/icons/system-keyboard-qt.png">su-to-root -X -c system-keyboard-qt</Program>
+</Menu>
+<Menu label="Programming" icon="gtk-missing-image" >
+<Program label="Vim.tiny" icon="gtk-missing-image">desktop-defaults-run -t vim </Program>
+</Menu>
+<Menu label="System" icon="/usr/share/icons/antix-papirus/preferences-system.png" >
+<Program label="Choose Startup Services" icon="/usr/share/icons/antix-papirus/choose-startup-services.png">rc-conf-wrapper.sh</Program>
+<Program label="Control Centre" icon="/usr/share/icons/antix-papirus/control-centre.png">antixcc.sh</Program>
+<Program label="Htop" icon="/usr/share/pixmaps/htop.png">desktop-defaults-run -t htop</Program>
+<Program label="ranger" icon="gtk-missing-image">desktop-defaults-run -t ranger</Program>
+<Program label="Root Terminal" icon="/usr/share/pixmaps/gksu-root-terminal.png">gksu /usr/bin/x-terminal-emulator</Program>
+<Program label="zzzFM" icon="/usr/share/pixmaps/zzzfm.png">zzzfm </Program>
+</Menu>
+</JWM>
