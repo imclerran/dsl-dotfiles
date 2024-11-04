@@ -53,5 +53,8 @@ catppuccin_prompt() {
 }
 
 build_prompt() {
+    PS1="$(catppuccin_prompt)"
+}
 
 PROMPT_COMMAND=build_prompt
+
