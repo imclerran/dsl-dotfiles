@@ -35,12 +35,14 @@ git_info() {
 catppuccin_prompt() {
     local branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
     local shape="\ue0b4"
+    
     local prompt="\[${cat_mauve_bg}\]"
     prompt+="\[${cat_base_fg}\] \D{%H:%M:%S}"
     prompt+="\[${cat_mauve_fg}${cat_blue_bg}${shape}\]"
     prompt+="\[${cat_base_fg}\] \u"
     prompt+="\[${cat_blue_fg}${cat_maroon_bg}${shape}\]"
     prompt+="\[${cat_base_fg}\] \W"
+
     if [[ -n $branch ]]; then
         if [[ -n $(git status --porcelain) ]]; then
             prompt+="\[${cat_maroon_fg}${cat_peach_bg}${shape}\]"
@@ -55,6 +57,7 @@ catppuccin_prompt() {
         prompt+="\[${cat_maroon_fg}${default_bg}${shape}\]"
     fi
     prompt+="\[$reset\] "
+
     echo -e "$prompt"
 }
 
