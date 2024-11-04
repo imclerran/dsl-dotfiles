@@ -6,14 +6,15 @@
 	<Font>Kristen ITC-9</Font>
 	<Width>4</Width>
 	<Height>24</Height>
+	<Foreground>#cba6f7</Foreground>
+	<Background>#1e1e2e</Background>
+	<Outline>#92e2d5</Outline>
 	<Active>
 		<Foreground>#1e1e2e</Foreground>
-		<Background>#cba6f7:#cba6f7</Background>
+		<Background>#f5c2e7:#cba6f7</Background>
 		<Outline>#1e1e2e</Outline>
 	</Active>
-		<Foreground>#cba6f7</Foreground>
-		<Background>#1e1e2e</Background>
-		<Outline>#92e2d5</Outline>
+	
 </WindowStyle>
 
 <TaskListStyle>
@@ -22,10 +23,8 @@
 		<Foreground>#1e1e2e</Foreground>
 		<Background>#f5c2e7:#cba6f7</Background>
 	</Active>
-	<Inactive>
-		<Foreground>gray60</Foreground>
-		<Background>#190400:</Background>
-	</Inactive>
+	<Foreground>#92e2d5</Foreground>
+	<Background>#1e1e2e:#181825</Background>
 </TaskListStyle>
 
 <TrayStyle>
