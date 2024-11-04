@@ -15,21 +15,12 @@ if ! ssh-add -l | grep -q "id_rsa"; then
     ssh-add ~/.ssh/id_rsa > /dev/null 2>&1
 fi
 
-#**** CUSTOM FUNCTIONS: ****
+#**** ENVIRONMENT ****
+export EDITOR="nvim"
 
-git_info() {
-    local branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
-    if [[ -n $branch ]]; then
-        echo -e "${cat_rosewater_fg}[${cat_teal_fg}$branch${cat_rosewater_fg}]"
-        
-        #if git diff --quiet 2>/dev/null && git diff --cached --quiet 2>/dev/null; then
-        #if [[ -z $(git status --porcelain 2>/dev/null) ]]; then
-	#    echo -e "${mocha_rosewater}[${mocha_teal}$branch${mocha_rosewater}]"
-        #else
-        #    echo -e "${mocha_rosewater}[${mocha_peach}$branch${mocha_rosewater}]"
-        #fi
-    fi
-}
+#**** ALIASES ****
+
+#**** CUSTOM FUNCTIONS: ****
 
 #**** BASH PROMPT ****
 catppuccin_prompt() {
