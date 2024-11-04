@@ -111,12 +111,12 @@ ${color f2cdcd}Home:${alignr}${color cba6f7}${fs_used /} / ${fs_size /}
 ${color f2cdcd}CPU:${alignc}${color cba6f7}$cpu%${color f2cdcd}	Processes:${alignr}${color cba6f7}$processes${color grey}
 ${color cba6f7}$hr
 ${color f38ba8}Top Processes:${alignr}%      %  
-${color f9e2af}Name              		${alignr} PID   CPU  MEM
-${color cba6f7} ${top name 1}${alignr}${top pid 1}${top cpu 1}${top mem 1}
-${color cba6f7} ${top name 2}${alignr}${top pid 2}${top cpu 2}${top mem 2}
-${color cba6f7} ${top name 3}${alignr}${top pid 3}${top cpu 3}${top mem 3}
-${color cba6f7} ${top name 4}${alignr}${top pid 4}${top cpu 4}${top mem 4}
-${color cba6f7} ${top name 5}${alignr}${top pid 5}${top cpu 2}${top mem 5}
+${color eba0ac}Name              		${alignr} PID   CPU  MEM
+${color f2cdcd} ${top name 1}${alignr}${color cba6f7}${top pid 1}${top cpu 1}${top mem 1}
+${color f2cdcd} ${top name 2}${alignr}${color cba6f7}${top pid 2}${top cpu 2}${top mem 2}
+${color f2cdcd} ${top name 3}${alignr}${color cba6f7}${top pid 3}${top cpu 3}${top mem 3}
+${color f2cdcd} ${top name 4}${alignr}${color cba6f7}${top pid 4}${top cpu 4}${top mem 4}
+${color f2cdcd} ${top name 5}${alignr}${color cba6f7}${top pid 5}${top cpu 2}${top mem 5}
 ${color cba6f7}$hr 
 ${color f38ba8}Network:${if_up wlan0}
 ${offset 0}${color f2cdcd} IP on wlan0: ${alignr}${color cba6f7}${addr wlan0}
