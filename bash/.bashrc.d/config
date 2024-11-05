@@ -45,7 +45,7 @@ catppuccin_prompt() {
             prompt+="\[${cat_teal_fg}${default_bg}\]${shape}"
         fi
     else
-        prompt+="\[${cat_maroon_fg}${default_bg}\]${shape}"
+        prompt+="\[${cat_red_fg}${default_bg}\]${shape}"
     fi
     prompt+="\[$reset\] "
 
