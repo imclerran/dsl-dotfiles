@@ -31,16 +31,16 @@ catppuccin_prompt() {
     prompt+="\[${cat_base_fg}\] \D{%H:%M:%S}"
     prompt+="\[${cat_mauve_fg}${cat_blue_bg}\]${shape}"
     prompt+="\[${cat_base_fg}\] \u"
-    prompt+="\[${cat_blue_fg}${cat_maroon_bg}\]${shape}"
+    prompt+="\[${cat_blue_fg}${cat_red_bg}\]${shape}"
     prompt+="\[${cat_base_fg}\] \W"
 
     if [[ -n $branch ]]; then
         if [[ -n $(git status --porcelain) ]]; then
-            prompt+="\[${cat_maroon_fg}${cat_yellow_bg}\]${shape}"
+            prompt+="\[${cat_red_fg}${cat_peach_bg}\]${shape}"
             prompt+="\[${cat_base_fg}\] \ue725 $branch"
-            prompt+="\[${cat_yellow_fg}${default_bg}\]${shape}"
+            prompt+="\[${cat_peach_fg}${default_bg}\]${shape}"
         else
-            prompt+="\[${cat_maroon_fg}${cat_teal_bg}\]${shape}"
+            prompt+="\[${cat_red_fg}${cat_teal_bg}\]${shape}"
             prompt+="\[${cat_base_fg}\] \ue725 $branch"
             prompt+="\[${cat_teal_fg}${default_bg}\]${shape}"
         fi
