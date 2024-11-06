@@ -1,0 +1,38 @@
+catppuccin_prompt() {
+    local branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
+    local shape0="\ue0b6"
+    local shape1="\ue0b0"
+    local shape2="\ue0b4"
+    local clock="\ue384"
+    
+    local prompt="\[${cat_mauve_bg}\]"
+    prompt+="\[${cat_base_fg}\] \D{%H:%M:%S}"
+    prompt+="\[${cat_mauve_fg}${cat_blue_bg}\]${shape2}"
+    prompt+="\[${cat_base_fg}\] \u"
+    prompt+="\[${cat_blue_fg}${cat_red_bg}\]${shape2}"
+    prompt+="\[${cat_base_fg}\] \W"
+
+    if [[ -n $branch ]]; then
+        if [[ -n $(git status --porcelain) ]]; then
+            prompt+="\[${cat_red_fg}${cat_peach_bg}\]${shape2}"
+            prompt+="\[${cat_base_fg}\] \ue725 $branch"
+            prompt+="\[${cat_peach_fg}${default_bg}\]${shape2}"
+        else
+            prompt+="\[${cat_red_fg}${cat_teal_bg}\]${shape2}"
+            prompt+="\[${cat_base_fg}\] \ue725 $branch"
+            prompt+="\[${cat_teal_fg}${default_bg}\]${shape2}"
+        fi
+    else
+        prompt+="\[${cat_red_fg}${default_bg}\]${shape2}"
+    fi
+    prompt+="\[$reset\] "
+
+    echo -e "$prompt"
+}
+
+build_prompt() {
+    PS1="$(catppuccin_prompt)"
+}
+
+PROMPT_COMMAND=build_prompt
+
