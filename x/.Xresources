@@ -1,0 +1,10 @@
+! xcalc settings
+# include ".config/xresources.d/xcalc/xcalc.conf"
+
+! urxvt colours 
+# include ".config/xresources.d/xcolours/antix.conf"
+URxvt*background: black
+URxvt*foreground: white
+
+URxvt*font: xft:FiraCode Nerd Font:size=12
+
